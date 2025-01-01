@@ -33,5 +33,6 @@ console.log(str3); // string contactination
 //using backticks we can add the dynamic data
 let username="Buddy"
 let day=2
+console.log("bye bye budy");
 
 console.log(`Hello ${username} welcome to the day ${day} of javascript`);
