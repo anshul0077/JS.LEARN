@@ -1,12 +1,18 @@
 
 let opt=require("./optModule")
 let userOPT=require("./DATABASE")
-function checkingveri (opt,userOPT){
-if(userOPT==opt){
-    return "You are sucessfully logined"
+let value1=opt()
+let value2=userOPT()
+
+function validation(){
+    if(value1==value2){
+        console.log("youare sucessfully logined ");
+        
+    }
+    else{
+        console.log("Please enter the valid opt");
+        
+    }
 }
-else{
-    return "Enter the valid opt"
-}
-}
-module.exports=checkingveri
+
+module.exports=validation
